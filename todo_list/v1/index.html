@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>To do list</title>
+        <link rel = "icon" type = "image/jpg" href = "media/icon.jpg">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body style="background-color: wheat;">
+        <div class = "content">
+
+            <button class="toggle" onclick="displayM()">Switch to dark</button>
+
+            <h1 class="title">
+                To do list
+            </h1>
+
+            <div class="input-data">
+                <input type="text" name="dataInput" id="" class="dataInput" placeholder="Enter your to do list">
+                <button onclick = "addOperation()" class = "dataAdd">ADD</button>
+            </div>
+
+            <ul class="history">
+                <li>
+                    <input type="checkbox" name="history" id="history">
+                    <label for="history">Homework</label>
+                </li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

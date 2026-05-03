@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  height: 55px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.content-body {
+  display: flex;
+  height: calc(100vh - 55px);
+}
+
+.left-nav {
+  width: 250px;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.search {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+}
+
+.right-pannel {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-section {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.add-section input {
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  height: 35px;
+  padding: 0 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.show-userData {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  gap: 10px;
+}
+
+.show-userData div {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.show-userData h2 {
+  font-size: 18px;
+}
+
+.show-userData h3 {
+  font-size: 14px;
+  color: gray;
+}
+
+.show-userData button {
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-userData button:first-of-type {
+  background-color: orange;
+}
+
+.show-userData button:last-of-type {
+  background-color: red;
+  color: white;
+}

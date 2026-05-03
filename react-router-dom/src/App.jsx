@@ -3,20 +3,33 @@ import { createBrowserRouter,  RouterProvider} from 'react-router-dom';
 import Home from './components/Home'
 import Dashboard from './components/Dashboard'
 import About from './components/About'
+import Navbar from './components/Navbar'
 
 function App() {
   let router = createBrowserRouter([
     {
       path: '/',
-      element: <Home />
+      element: 
+      <div>
+        <Navbar />
+        <Home />
+      </div>
     },
     {
       path: '/dashboard',
-      element: <Dashboard />
+      element:
+      <div>
+        <Navbar />
+        <Dashboard />
+      </div>
     },
     {
       path: '/about',
-      element: <About />
+      element:
+      <div>
+        <Navbar />
+        <About />
+      </div>
     }
   ])
 
